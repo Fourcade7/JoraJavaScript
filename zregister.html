@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    
+    <!-- NAVBAR -->
+<div class="conainer-fluid">
+    <nav class="navbar navbar-expand-lg fixed-top bg-success navbar-dark">
+        <div class="container-md">
+          
+          <div class="d-flex align-items-center justify-content-center">
+           
+                <img src="images/homewhite.png" alt="Bootstrap" width="25" height="28">
+            
+                <a class="nav-link ms-2 text-white" href="zapravka.html">Zapravka</a>
+          </div>  
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+             
+              
+
+              <li class="nav-item">
+                <div class="d-flex align-items-center ms-3">
+                    <img src="images/person.png" alt="Bootstrap" width="20" height="20">
+                    <a class="nav-link" href="zlogin.html">Логин</a>
+                </div>
+               
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="zregister.html">Регистратсия</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
+    <!-- NAVBAR -->
+
+    <div class="container-md">
+      <div class="col d-flex min-vh-100 justify-content-center align-items-center">
+
+         <!-- FORM -->
+         
+         <div class="col d-flex flex-column justify-content-center align-items-center">
+          <div class="col-12 col-lg-4 col-md-5 col-sm-6">
+           
+            <input type="email" class="form-control" placeholder="Пр">
+          </div>
+
+          <div class="col-12 col-lg-4 col-md-5 col-sm-6 mt-2">
+            <input type="email" class="form-control" placeholder="Аминов">
+          </div>
+
+          <div class="col-12 col-lg-4 col-md-5 col-sm-6 mt-2">
+            <input type="email" class="form-control" placeholder="user@gmail.com">
+          </div>
+         
+                   
+          <div class="col-12 col-lg-4 col-md-5 col-sm-6 mt-2">
+            <div class="input-group">
+                <select class="form-select" id="inputGroupSelect02">                  
+                  <option value="1">Рабочий</option>
+                  <option value="2">Админ</option>                
+                </select>            
+           </div>
+          </div>
+         
+
+          <div class="col-12 col-lg-4 col-md-5 col-sm-6 mt-2">
+            <div class="input-group">
+            <input id="inputPassword" type="password" class="form-control" placeholder="требуется 8 символов">
+            <span class="input-group-text bg-success">
+              <img id="passEye" src="images/eyewhite.png" alt="Bootstrap" width="20" height="20">
+            </span>
+          </div>
+          </div>
+
+           <div class="col-12 col-lg-4 col-md-5 col-sm-6 mt-2">
+            <div class="input-group">
+            <input id="inputPassword2" type="password" class="form-control" placeholder="Подтвердите пароль">
+            <span class="input-group-text bg-success">
+              <img id="passEye2" src="images/eyewhite.png" alt="Bootstrap" width="20" height="20">
+            </span>
+          </div>
+          </div>
+          
+
+          <div class="col-12 col-lg-4 col-md-5 col-sm-6 mt-3">
+            <div class="row gx-2">
+             
+              <div class="col d-grid">
+                <a class="btn btn-outline-success" href="zlogin.html" role="button">Логин</a>
+                
+              </div>
+
+              <div class="col d-grid">
+                <button type="submit" class="btn btn-success">Регистратсия</button>
+              </div>
+            </div>
+          </div>
+          
+         </div>
+
+         <!-- FORM -->
+
+      </div>
+    </div>
+
+
+    
+
+    <script src="/JS Files/index.js"></script>
+    <script src="/JS Files/register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="dropdowns.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    
+    <!-- NAVBAR -->
+<div class="conainer-fluid">
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary navbar-dark">
+        <div class="container-md">
+          
+          <div class="d-flex align-items-center justify-content-center">           
+                <img src="/images/homewhite.png" alt="Bootstrap" width="25" height="28">
+                <a class="nav-link ms-2 text-white" href="index.html">CRM</a>
+          </div>  
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <div class="d-flex align-items-center ms-2">
+                    <img src="/images/appwhite.png" alt="Bootstrap" width="24" height="24">
+                    <a class="nav-link" href="allproducts.html">Все продукты</a>
+                </div>
+               
+              </li>
+
+              <li class="nav-item">
+                <div class="d-flex align-items-center ms-2">
+                    <img src="/images/calendar.png" alt="Bootstrap" width="20" height="20">
+                     <a class="nav-link active" href="control.html">Контроль</a>
+                </div>               
+              </li>
+
+              <li class="nav-item">
+                <div class="d-flex align-items-center ms-2">
+                    <img src="/images/settingswhite.png" alt="Bootstrap" width="20" height="20">
+                     <a class="nav-link" href="settings.html">Управления</a>
+                </div>
+               
+              </li>
+              
+
+              <li class="nav-item">
+                <div class="d-flex align-items-center ms-3">
+                    <img src="/images/person.png" alt="Bootstrap" width="20" height="20">
+                    <a class="nav-link" href="login.html">Логин</a>
+                </div>
+               
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="">Регистратсия</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
+    <!-- NAVBAR -->
+
+<div class="container-md">
+ <div class="col  mt-3">
+
+      <div class="row row-cols-3 gx-1 align-items-center justify-content-center">
+
+      <div class="col d-flex  justify-content-center ">
+          <!-- CALENDAR -->
+        <div class="d-flex flex-column flex-md-row p-1 gap-1">
+          <div class="dropdown-menu d-block position-static p-2 mx-0 shadow rounded-3 w-540px" data-bs-theme="light">
+            <div class="d-grid gap-1">
+              <div class="cal">
+                <div class="cal-month">
+                  <button id="arrowleft" class="btn cal-btn" type="button">
+                    <img  class="bi" width="19" height="19" src="images/left-arrow.png">
+                  </button>
+                  <strong id="monthname" class="cal-month-name">June 2024</strong>
+                
+                  <select class="form-select cal-month-name d-none">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option selected value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                  </select>
+                  <button id="arrowright" class="btn cal-btn" type="button">
+                    <img  class="bi" width="19" height="19" src="images/right-arrow.png">
+                  </button>
+                </div>
+                <div class="cal-weekdays text-body-secondary">                  
+                  <div class="cal-weekday">Пон</div>
+                  <div class="cal-weekday">Вто</div>
+                  <div class="cal-weekday">Сре</div>
+                  <div class="cal-weekday">Чет</div>
+                  <div class="cal-weekday">Пят</div>
+                  <div class="cal-weekday">Суб</div>
+                  <div class="cal-weekday">Вос</div>
+                </div>
+                <div class="cal-days">
+                  <!-- <button class="btn cal-btn" disabled type="button">40</button>
+                  <button class="btn cal-btn" disabled type="button">31</button>        
+                  <button class="btn cal-btn" type="button">1</button>
+                  <button class="btn cal-btn" type="button">2</button>
+                  <button class="btn cal-btn" type="button">3</button>
+                  <button class="btn cal-btn" type="button">4</button>
+                  <button class="btn cal-btn" type="button">5</button>
+                  <button class="btn cal-btn" type="button">6</button>
+                  <button class="btn cal-btn" type="button">7</button>
+        
+                  <button class="btn cal-btn" type="button">8</button>
+                  <button class="btn cal-btn" type="button">9</button>
+                  <button class="btn cal-btn" type="button">10</button>
+                  <button class="btn cal-btn" type="button">11</button>
+                  <button class="btn cal-btn" type="button">12</button>
+                  <button class="btn cal-btn" type="button">13</button>
+                  <button class="btn cal-btn" type="button">14</button>
+        
+                  <button class="btn cal-btn" type="button">15</button>
+                  <button class="btn cal-btn" type="button">16</button>
+                  <button class="btn cal-btn" type="button">17</button>
+                  <button class="btn cal-btn" type="button">18</button>
+                  <button class="btn cal-btn" type="button">19</button>
+                  <button class="btn cal-btn" type="button">20</button>
+                  <button class="btn cal-btn" type="button">21</button>
+        
+                  <button class="btn cal-btn" type="button">22</button>
+                  <button class="btn cal-btn" type="button">23</button>
+                  <button class="btn cal-btn" type="button">24</button>
+                  <button class="btn cal-btn" type="button">25</button>
+                  <button class="btn cal-btn" type="button">26</button>
+                  <button class="btn cal-btn" type="button">27</button>
+                  <button class="btn cal-btn" type="button">28</button>
+        
+                  <button class="btn cal-btn" type="button">29</button>
+                  <button class="btn cal-btn" type="button">30</button>
+                  <button class="btn cal-btn" type="button">31</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CALENDAR -->
+     </div>
+
+           
+
+       
+
+
+      </div>
+
+     
+
+        
+
+       
+        
+        
+ </div>
+</div>
+
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-1  row-cols-md-2 gx-2 gy-2 d-flex  mt-5">
+
+    <!-- CARD -->
+     <div class="col">
+      <div class="card text-bg-light" >
+      <div class="card-header">17/08/2024 16:41</div>
+      <div class="card-body">
+      <!-- <h5 class="card-title">Общая сумма: 1.265.000</h5>    -->
+        <div class="d-flex align-items-center">
+          <div class="fw-light fs-5">Общая сумма:</div>
+          <span class="m-2 px-2 py-1 fw-bold fs-5">1.265.000</span>          
+        </div>     
+        <div class="d-flex align-items-center border-bottom">
+          <div class="fw-light">1.HeadPhone LG Телефон </div>
+          <span class="m-2 badge text-bg-secondary px-2 py-1 fw-light">Штук: 1</span>
+          <span class="badge text-bg-secondary px-2 py-1 fw-light">1.000.000 UZS</span>
+        </div>
+        <div class="d-flex align-items-center border-bottom">
+          <div class="fw-light">2.Телефон </div>
+          <span class="m-2 badge text-bg-secondary px-2 py-1 fw-light">Штук: 2</span>
+          <span class="badge text-bg-secondary px-2 py-1 fw-light">2.000.000 UZS</span>
+        </div>
+       
+      </div>
+    </div>
+     </div>
+    
+    <!-- CARD -->
+    <div class="col">
+      <div class="card text-bg-light" >
+      <div class="card-header">17/08/2024 16:41</div>
+      <div class="card-body">
+      <!-- <h5 class="card-title">Общая сумма: 1.265.000</h5>    -->
+        <div class="d-flex align-items-center">
+          <div class="fw-light fs-5">Общая сумма:</div>
+          <span class="m-2 px-2 py-1 fw-bold fs-5">1.265.000</span>          
+        </div>     
+        <div class="d-flex align-items-center border-bottom">
+          <div class="fw-light">1.HeadPhone LG Телефон </div>
+          <span class="m-2 badge text-bg-secondary px-2 py-1 fw-light">Штук: 1</span>
+          <span class="badge text-bg-secondary px-2 py-1 fw-light">1.000.000 UZS</span>
+        </div>
+        <div class="d-flex align-items-center border-bottom">
+          <div class="fw-light">2.Телефон </div>
+          <span class="m-2 badge text-bg-secondary px-2 py-1 fw-light">Штук: 2</span>
+          <span class="badge text-bg-secondary px-2 py-1 fw-light">2.000.000 UZS</span>
+        </div>
+       
+      </div>
+    </div>
+     </div>
+   <!-- CARD -->
+     <!-- CARD -->
+     <div class="col">
+      <div class="card text-bg-light" >
+      <div class="card-header">17/08/2024 16:41</div>
+      <div class="card-body">
+      <!-- <h5 class="card-title">Общая сумма: 1.265.000</h5>    -->
+        <div class="d-flex align-items-center">
+          <div class="fw-light fs-5">Общая сумма:</div>
+          <span class="m-2 px-2 py-1 fw-bold fs-5">1.265.000</span>          
+        </div>     
+        <div class="d-flex align-items-center border-bottom">
+          <div class="fw-light">1.HeadPhone LG Телефон </div>
+          <span class="m-2 badge text-bg-secondary px-2 py-1 fw-light">Штук: 1</span>
+          <span class="badge text-bg-secondary px-2 py-1 fw-light">1.000.000 UZS</span>
+        </div>
+        <div class="d-flex align-items-center border-bottom">
+          <div class="fw-light">2.Телефон </div>
+          <span class="m-2 badge text-bg-secondary px-2 py-1 fw-light">Штук: 2</span>
+          <span class="badge text-bg-secondary px-2 py-1 fw-light">2.000.000 UZS</span>
+        </div>
+       
+      </div>
+    </div>
+     </div>
+   <!-- CARD -->
+    
+
+    
+  </div>
+</div>
+
+
+
+
+    
+
+<script src="JS Files/control.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
